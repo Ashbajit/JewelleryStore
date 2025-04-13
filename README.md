@@ -1,2 +1,2 @@
 # JewelleryStore
-Website for showcasing jewellery
+Website for showcasing jewellery designs.
