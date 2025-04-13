@@ -5,21 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jewellery Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="icon/favicon.ico" />
 </head>
 <body class="bg-white text-gray-800">
   <!-- Header -->
   <header class="p-4 shadow-md sticky top-0 bg-white z-50">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-xl font-bold">My jewellery Store</h1>
-      <nav class="space-x-4">
-        <a href="#home" class="hover:text-pink-600">Home</a>
-        <a href="#collection" class="hover:text-pink-600">Collections</a>
-        <a href="#about" class="hover:text-pink-600">About Me</a>
-        <a href="#contact" class="hover:text-pink-600">Contact</a>
+      <nav class="relative">
+        <button class="hover:text-pink-600 focus:outline-none" id="menuButton">Menu</button>
+        <div id="dropdownMenu" class="absolute right-0 mt-2 bg-white border rounded shadow-lg hidden">
+          <a href="#home" class="block px-4 py-2 hover:bg-pink-100">Home</a>
+          <a href="#collection" class="block px-4 py-2 hover:bg-pink-100">Collections</a>
+          <a href="#about" class="block px-4 py-2 hover:bg-pink-100">About Me</a>
+          <a href="#contact" class="block px-4 py-2 hover:bg-pink-100">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    menuButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
 
   <!-- Hero Section -->
   <section id="home" class="bg-pink-100 py-10 text-center">
