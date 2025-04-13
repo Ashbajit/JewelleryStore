@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jewelry Designs</title>
+  <title>jewellery Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/favicon.ico" />
 </head>
@@ -11,10 +11,11 @@
   <!-- Header -->
   <header class="p-4 shadow-md sticky top-0 bg-white z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">My Jewelry Store</h1>
+      <h1 class="text-xl font-bold">My jewellery Store</h1>
       <nav class="space-x-4">
         <a href="#home" class="hover:text-pink-600">Home</a>
         <a href="#collection" class="hover:text-pink-600">Collections</a>
+        <a href="#about" class="hover:text-pink-600">About Us</a>
         <a href="#contact" class="hover:text-pink-600">Contact</a>
       </nav>
     </div>
@@ -22,23 +23,63 @@
 
   <!-- Hero Section -->
   <section id="home" class="bg-pink-100 py-10 text-center">
-    <h2 class="text-3xl font-semibold mb-2">Elegant & Timeless Jewelry</h2>
+    <h2 class="text-3xl font-semibold mb-2">Elegant & Timeless jewellery</h2>
     <p class="text-lg">Discover our curated collections of rings, necklaces, earrings and more.</p>
   </section>
 
   <!-- Collection Gallery -->
   <section id="collection" class="py-10 container mx-auto">
-    <h3 class="text-2xl font-bold mb-6 text-center">Featured Designs</h3>
+    <h3 class="text-2xl font-bold mb-6 text-center">Featured Collections</h3>
+
+    <!-- Categories -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Jewelry Card Example -->
       <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-        <img src="images/necklace1.jpg" alt="Elegant Gold Necklace" class="w-full h-48 object-cover" />
+        <img src="images/pendant1.jpg" alt="Pendant" class="w-full h-48 object-cover" />
         <div class="p-4">
-          <h4 class="text-lg font-semibold">Gold Necklace</h4>
-          <p class="text-sm text-gray-600">Handcrafted, 22K Gold</p>
+          <h4 class="text-lg font-semibold">Pendants</h4>
+          <p class="text-sm text-gray-600">Delicate and modern styles.</p>
         </div>
       </div>
-      <!-- Repeat similar cards -->
+      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <img src="images/anklet1.jpg" alt="Anklet" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Anklets</h4>
+          <p class="text-sm text-gray-600">Trendy and ethnic looks.</p>
+        </div>
+      </div>
+      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <img src="images/bangle1.jpg" alt="Bangle" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Bangles</h4>
+          <p class="text-sm text-gray-600">Elegant and handcrafted.</p>
+        </div>
+      </div>
+      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <img src="images/ring1.jpg" alt="Ring" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Rings</h4>
+          <p class="text-sm text-gray-600">Gold, silver and stone rings.</p>
+        </div>
+      </div>
+      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <img src="images/earring1.jpg" alt="Earring" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Earrings</h4>
+          <p class="text-sm text-gray-600">Studs, hoops and drops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="bg-white py-12">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+      <img src="images/Sharanya.jpg" alt="About Us" class="w-full md:w-1/2 rounded-xl shadow-lg" />
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-bold mb-4">About Us</h3>
+        <p class="text-gray-700 mb-2">Hi! I am Sharanya 👋. I make customised jewellery for my friends. I would love to craft something personal for you. There are various categories and designs to choose from, and in case you need something specific just drop me a mail and I will do it. Happy Shopping! </p>
+        <p class="text-gray-700">We offer <span class="font-semibold text-pink-600">customization options</span> to help you create unique pieces that reflect your personality — from engraved rings to personalized pendants. Our mission is to deliver <span class="font-semibold text-pink-600">affordable luxury</span> without compromise.</p>
+      </div>
     </div>
   </section>
 
@@ -52,7 +93,7 @@
 
   <!-- Footer -->
   <footer class="text-center py-4 text-sm text-gray-500">
-    © 2025 My Jewelry Store. All rights reserved.
+    © 2025 My jewellery Store. All rights reserved.
   </footer>
 </body>
 </html>
