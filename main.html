@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewelry Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="p-4 shadow-md sticky top-0 bg-white z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Jewelry Store</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-pink-600">Home</a>
+        <a href="#collection" class="hover:text-pink-600">Collections</a>
+        <a href="#contact" class="hover:text-pink-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-pink-100 py-10 text-center">
+    <h2 class="text-3xl font-semibold mb-2">Elegant & Timeless Jewelry</h2>
+    <p class="text-lg">Discover our curated collections of rings, necklaces, earrings and more.</p>
+  </section>
+
+  <!-- Collection Gallery -->
+  <section id="collection" class="py-10 container mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center">Featured Designs</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Jewelry Card Example -->
+      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+        <img src="images/necklace1.jpg" alt="Elegant Gold Necklace" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold">Gold Necklace</h4>
+          <p class="text-sm text-gray-600">Handcrafted, 22K Gold</p>
+        </div>
+      </div>
+      <!-- Repeat similar cards -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+      <p>Email us at <a href="mailto:info@myjewelshop.com" class="text-pink-600">info@myjewelshop.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-500">
+    © 2025 My Jewelry Store. All rights reserved.
+  </footer>
+</body>
+</html>
