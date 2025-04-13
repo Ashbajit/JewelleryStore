@@ -1,2 +1,2 @@
-# JewelleryStore
-Website for showcasing jewellery designs.
+# Github Pages Deployment
+Github page
