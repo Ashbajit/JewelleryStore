@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>jewellery Designs</title>
+  <title>Jewellery Designs</title>
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="stylesheet" href="styles.css"> </head>
+  <!-- For tailwind CSS -->
   <link href="src/output.css" rel="stylesheet">
   <link rel="icon" href="icon/favicon.ico" />
 </head>
@@ -25,22 +26,8 @@
       </nav>
     </div>
   </header>
-  <script>
-    const menuButton = document.getElementById('menuButton');
-    const dropdownMenu = document.getElementById('dropdownMenu');
 
-    menuButton.addEventListener('click', () => {
-      dropdownMenu.classList.toggle('hidden');
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.add('hidden');
-      }
-    });
-  </script>
-
-  <!-- Hero Section -->
+  <!-- Content Section -->
   <section id="home" class="bg-pink-100 py-10 text-center">
     <h2 class="text-3xl font-semibold mb-2">Elegant & Timeless jewellery</h2>
     <p class="text-lg">Discover our curated collections of rings, necklaces, earrings and more.</p>
@@ -113,5 +100,20 @@
   <footer class="text-center py-4 text-sm text-gray-500">
     © 2025 My jewellery Store. All rights reserved.
   </footer>
+  
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    menuButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
